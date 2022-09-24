@@ -241,19 +241,44 @@
 }
 .aboutDiv{
     width: 70%;
-    height: 20em;
+    /* height: 20em; */
     box-shadow: 0px 2px 8px 6px rgba(0, 0, 0, 0.25);
     border-radius: 1.25em;
     margin: 0 auto;
     position: relative;
-    /* background: red; */
-    /* padding: 1em; */
     overflow: hidden;
     background: #FFFFFF;
-    /* top: 0.625em; */
-    bottom: 2em;
-    /* z-index: 20; */
+    bottom: 4em;
+    padding: 3em;
+    flex-direction: column;
 }
+
+.aboutTitle{
+    font-family: var(--main-font-style);
+    font-size: 1.6875em;
+    text-align: center;
+    color:#000;
+    /* color: #585958; */
+    font-weight: bolder;
+    /* text-decoration: underline overline dotted red; */
+}
+
+.aboutParagraph{
+    font-family: "Roboto";
+    font-size: 1em;
+    /* text-align: center; */
+    /* max-width: 70%; */
+    margin-top: 2em;
+    color: #585958;
+
+}
+.aboutParagraph h3{
+    font-family: var(--main-font-style);
+    font-size: 1.125em;
+    color: #2C3D7A;
+    margin-bottom: 0.3125em;
+}
+
 .footer{
     width: 100%;
     background: #F17676;
