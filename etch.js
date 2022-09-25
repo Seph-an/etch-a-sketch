@@ -47,7 +47,7 @@ navElement3.classList.add("navElement");
 
 const list3 = document.createElement("li");
 list3.classList.add("link", "about");
-list3.textContent = "About";
+list3.textContent = "How it works";
 navElement3.appendChild(list3);
 
 const containerPlus = document.createElement("div");
@@ -131,6 +131,7 @@ const gridSizeContainerDiv = document.querySelector(".gridSizeContainer");
 
 const value = document.querySelector("#gridSize");
 const enterBtn = document.querySelector(".gridEnterBtn");
+const instruction = document.querySelector(".gridSizeInstruction");
 
 function makeCells(rows, cols) {
   //change value of the CSS variables '--grid-rows' to new value of 'rows'...
@@ -151,6 +152,12 @@ function getGridSize() {
       gridSizeInstruction.textContent = "*Input must be a number";
     } else {
       if (val < 10 || val > 100) {
+        // if (window.getComputedStyle(instruction).color === "#F17676") {
+        //   gridSizeInstruction.textContent = "* Number must be between 10-100";
+        // } else {
+        //   gridSizeInstruction.classList.toggle("gridSizeInstructionOn");
+        //   gridSizeInstruction.textContent = "* Number must be between 10-100";
+        // }
         gridSizeInstruction.textContent = "* Number must be between 10-100";
       } else {
         gridSizeInstruction.classList.toggle("gridSizeInstructionOn");
